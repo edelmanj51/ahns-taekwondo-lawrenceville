@@ -89,6 +89,28 @@
     .gallery-caption{background:var(--white);padding:16px 20px}
     .gallery-caption h3{font-size:16px;font-weight:700;color:var(--dark);margin-bottom:4px}
     .gallery-caption p{font-size:14px;color:var(--gray)}
+    /* ── Photo gallery (client photos) ── */
+    #photo-gallery{padding:72px 24px 88px;background:var(--light)}
+    .photo-gallery-header{text-align:center;max-width:680px;margin:0 auto 44px}
+    .photo-gallery-header h2{font-size:clamp(26px,3.5vw,38px);font-weight:900;color:var(--dark);margin-bottom:12px}
+    .photo-gallery-header p{font-size:17px;color:var(--gray)}
+    .gphoto-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;max-width:1200px;margin:0 auto}
+    .gphoto-item{border-radius:var(--radius);overflow:hidden;cursor:pointer;aspect-ratio:1/1;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s}
+    .gphoto-item:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
+    .gphoto-item img{width:100%;height:100%;object-fit:cover;display:block}
+    /* ── Lightbox ── */
+    .lightbox-overlay{position:fixed;inset:0;z-index:10000;background:rgba(7,16,30,.94);display:flex;align-items:center;justify-content:center;padding:24px;opacity:0;pointer-events:none;transition:opacity .25s ease}
+    .lightbox-overlay.open{opacity:1;pointer-events:all}
+    .lightbox-overlay img{max-width:min(90vw,1100px);max-height:82vh;border-radius:var(--radius);box-shadow:var(--shadow-lg);object-fit:contain}
+    .lightbox-close,.lightbox-prev,.lightbox-next{position:absolute;background:rgba(255,255,255,.1);border:none;color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:var(--transition)}
+    .lightbox-close:hover,.lightbox-prev:hover,.lightbox-next:hover{background:rgba(255,255,255,.22)}
+    .lightbox-close{top:20px;right:20px;width:44px;height:44px;font-size:24px}
+    .lightbox-prev,.lightbox-next{top:50%;transform:translateY(-50%);width:52px;height:52px}
+    .lightbox-prev{left:16px}
+    .lightbox-next{right:16px}
+    .lightbox-prev svg,.lightbox-next svg,.lightbox-close svg{width:22px;height:22px;fill:none;stroke:white;stroke-width:2.5}
+    .lightbox-counter{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);color:rgba(255,255,255,.7);font-size:14px;font-weight:600}
+    @media(max-width:640px){.lightbox-prev,.lightbox-next{width:40px;height:40px}.lightbox-prev{left:6px}.lightbox-next{right:6px}}
     /* ── Tour CTA ── */
     .tour-cta{background:linear-gradient(135deg,#07101e 0%,#1a3a6e 100%);padding:80px 24px;text-align:center;color:white}
     .tour-cta h2{font-size:clamp(28px,4vw,44px);font-weight:900;margin-bottom:16px}
@@ -230,6 +252,104 @@
 </section>
 
 
+<section id="photo-gallery">
+  <div class="photo-gallery-header reveal">
+    <h2>Gallery</h2>
+    <p>Tournaments, training, and celebrations from around the dojang — click any photo to view it larger.</p>
+  </div>
+  <div class="gphoto-grid">
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-001.jpg" alt="Student competing at a Taekwondo tournament" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-002.jpg" alt="Student competing at a Taekwondo tournament" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-003.jpg" alt="Student competing at a Taekwondo tournament" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-004.jpg" alt="Student competing at a Taekwondo tournament" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-005.jpg" alt="Student competing at a Taekwondo tournament" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-006.jpg" alt="Student competing at a Taekwondo tournament" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-007.jpg" alt="Student competing at a Taekwondo tournament" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-008.jpg" alt="Student competing at a Taekwondo tournament" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-009.jpg" alt="Student competing at a Taekwondo tournament" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-010.jpg" alt="Student competing at a Taekwondo tournament" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-011.jpg" alt="Student competing at a Taekwondo tournament" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-012.jpg" alt="Student competing at a Taekwondo tournament" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-013.jpg" alt="Student competing at a Taekwondo tournament" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-014.jpg" alt="Student competing at a Taekwondo tournament" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-015.jpg" alt="Student competing at a Taekwondo tournament" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-016.jpg" alt="Student competing at a Taekwondo tournament" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-017.jpg" alt="Student competing at a Taekwondo tournament" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-018.jpg" alt="Student competing at a Taekwondo tournament" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-019.jpg" alt="Student competing at a Taekwondo tournament" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-020.jpg" alt="Student competing at a Taekwondo tournament" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-021.jpg" alt="Student competing at a Taekwondo tournament" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-022.jpg" alt="Student competing at a Taekwondo tournament" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-023.jpg" alt="Student competing at a Taekwondo tournament" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-024.jpg" alt="Student competing at a Taekwondo tournament" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-025.jpg" alt="Student competing at a Taekwondo tournament" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-026.jpg" alt="Student competing at a Taekwondo tournament" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-027.jpg" alt="Student competing at a Taekwondo tournament" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-028.jpg" alt="Student competing at a Taekwondo tournament" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-029.jpg" alt="Student competing at a Taekwondo tournament" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-030.jpg" alt="Student competing at a Taekwondo tournament" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-031.jpg" alt="Student competing at a Taekwondo tournament" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-032.jpg" alt="Student competing at a Taekwondo tournament" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-033.jpg" alt="Student competing at a Taekwondo tournament" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-034.jpg" alt="Student competing at a Taekwondo tournament" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-035.jpg" alt="Student competing at a Taekwondo tournament" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-036.jpg" alt="Student competing at a Taekwondo tournament" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-037.jpg" alt="Student competing at a Taekwondo tournament" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-038.jpg" alt="Student competing at a Taekwondo tournament" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-039.jpg" alt="Student competing at a Taekwondo tournament" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-040.jpg" alt="Student competing at a Taekwondo tournament" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-041.jpg" alt="Student competing at a Taekwondo tournament" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-042.jpg" alt="Training on the mats at Ahn's Taekwondo Lawrenceville" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-043.jpg" alt="Training on the mats at Ahn's Taekwondo Lawrenceville" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-044.jpg" alt="Training on the mats at Ahn's Taekwondo Lawrenceville" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-045.jpg" alt="Training on the mats at Ahn's Taekwondo Lawrenceville" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-046.jpg" alt="Training on the mats at Ahn's Taekwondo Lawrenceville" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-047.jpg" alt="Training on the mats at Ahn's Taekwondo Lawrenceville" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-048.jpg" alt="Training on the mats at Ahn's Taekwondo Lawrenceville" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-049.jpg" alt="Training on the mats at Ahn's Taekwondo Lawrenceville" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-050.jpg" alt="Training on the mats at Ahn's Taekwondo Lawrenceville" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-051.jpg" alt="Training on the mats at Ahn's Taekwondo Lawrenceville" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-052.jpg" alt="Training on the mats at Ahn's Taekwondo Lawrenceville" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-053.jpg" alt="Training on the mats at Ahn's Taekwondo Lawrenceville" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-054.jpg" alt="Training on the mats at Ahn's Taekwondo Lawrenceville" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-055.jpg" alt="Training on the mats at Ahn's Taekwondo Lawrenceville" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-056.jpg" alt="Training on the mats at Ahn's Taekwondo Lawrenceville" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-057.jpeg" alt="Training on the mats at Ahn's Taekwondo Lawrenceville" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-058.jpg" alt="Training on the mats at Ahn's Taekwondo Lawrenceville" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-059.jpg" alt="Training on the mats at Ahn's Taekwondo Lawrenceville" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-060.jpg" alt="Training on the mats at Ahn's Taekwondo Lawrenceville" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-061.jpg" alt="Training on the mats at Ahn's Taekwondo Lawrenceville" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-062.jpg" alt="Training on the mats at Ahn's Taekwondo Lawrenceville" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-063.jpg" alt="Students at an Ahn's Taekwondo school event" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-064.jpg" alt="Students at an Ahn's Taekwondo school event" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-065.jpg" alt="Students at an Ahn's Taekwondo school event" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-066.jpg" alt="Students at an Ahn's Taekwondo school event" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-067.jpg" alt="Students at an Ahn's Taekwondo school event" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-068.jpg" alt="Students at an Ahn's Taekwondo school event" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-069.png" alt="Students at an Ahn's Taekwondo school event" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-070.jpg" alt="Students at an Ahn's Taekwondo school event" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-071.jpg" alt="Students at an Ahn's Taekwondo school event" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-072.jpg" alt="Students at an Ahn's Taekwondo school event" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-073.jpg" alt="Students at an Ahn's Taekwondo school event" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-074.jpg" alt="Students at an Ahn's Taekwondo school event" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-075.jpeg" alt="Students at an Ahn's Taekwondo school event" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-076.jpeg" alt="Students at an Ahn's Taekwondo school event" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-077.jpg" alt="Students at an Ahn's Taekwondo school event" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-078.jpg" alt="Students at an Ahn's Taekwondo school event" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-079.jpg" alt="Students at an Ahn's Taekwondo school event" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-080.jpg" alt="Students at an Ahn's Taekwondo school event" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-081.jpg" alt="Students at an Ahn's Taekwondo school event" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-082.jpg" alt="Students at an Ahn's Taekwondo school event" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-083.jpg" alt="Students at an Ahn's Taekwondo school event" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-084.jpeg" alt="Training on the mats at Ahn's Taekwondo Lawrenceville" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-085.jpeg" alt="Training on the mats at Ahn's Taekwondo Lawrenceville" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-086.jpeg" alt="Ahn's Taekwondo Lawrenceville students and instructors" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-087.jpeg" alt="Ahn's Taekwondo Lawrenceville students and instructors" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-088.jpeg" alt="Ahn's Taekwondo Lawrenceville students and instructors" loading="lazy" onclick="openLightbox(this)"></div>
+    <div class="gphoto-item reveal"><img src="images/gallery/gallery-089.jpeg" alt="Ahn's Taekwondo Lawrenceville students and instructors" loading="lazy" onclick="openLightbox(this)"></div>
+  </div>
+</section>
+
 <section class="tour-cta">
   <h2>Ready to See It In Person?</h2>
   <p>A photo can only tell you so much. Book a free trial class and experience Ahn's Taekwondo for yourself.</p>
@@ -339,6 +459,21 @@
   </div>
 </div>
 
+<!-- Lightbox -->
+<div class="lightbox-overlay" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" onclick="closeOnOverlay(event,'lightbox')">
+  <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close">
+    <svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>
+  </button>
+  <button class="lightbox-prev" onclick="lightboxStep(-1)" aria-label="Previous photo">
+    <svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
+  </button>
+  <img id="lightbox-img" src="" alt="">
+  <button class="lightbox-next" onclick="lightboxStep(1)" aria-label="Next photo">
+    <svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
+  </button>
+  <div class="lightbox-counter" id="lightbox-counter"></div>
+</div>
+
 <script>
 (function(){
   'use strict';
@@ -360,8 +495,34 @@
   } else { document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('visible')}); }
   window.openModal=function(id){var el=document.getElementById(id);if(!el)return;el.classList.add('open');document.body.style.overflow='hidden';var f=el.querySelector('input,select');if(f)setTimeout(function(){f.focus()},80)};
   window.closeModal=function(id){var el=document.getElementById(id);if(!el)return;el.classList.remove('open');document.body.style.overflow=''};
-  window.closeOnOverlay=function(e,id){if(e.target===e.currentTarget)closeModal(id)};
-  document.addEventListener('keydown',function(e){if(e.key==='Escape'){document.querySelectorAll('.modal-overlay.open').forEach(function(m){m.classList.remove('open')});document.body.style.overflow=''}});
+  window.closeOnOverlay=function(e,id){if(e.target===e.currentTarget){if(id==='lightbox'){closeLightbox()}else{closeModal(id)}}};
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'){document.querySelectorAll('.modal-overlay.open').forEach(function(m){m.classList.remove('open')});document.body.style.overflow='';closeLightbox()}if(e.key==='ArrowLeft')lightboxStep(-1);if(e.key==='ArrowRight')lightboxStep(1)});
+  var gphotos=Array.prototype.slice.call(document.querySelectorAll('.gphoto-item img'));
+  var lbIndex=0;
+  var lb=document.getElementById('lightbox'),lbImg=document.getElementById('lightbox-img'),lbCounter=document.getElementById('lightbox-counter');
+  window.openLightbox=function(imgEl){
+    lbIndex=gphotos.indexOf(imgEl);
+    showLightboxImage();
+    lb.classList.add('open');
+    document.body.style.overflow='hidden';
+  };
+  window.closeLightbox=function(){
+    if(!lb)return;
+    lb.classList.remove('open');
+    document.body.style.overflow='';
+  };
+  window.lightboxStep=function(dir){
+    if(!lb||!lb.classList.contains('open'))return;
+    lbIndex=(lbIndex+dir+gphotos.length)%gphotos.length;
+    showLightboxImage();
+  };
+  function showLightboxImage(){
+    if(!gphotos.length)return;
+    var img=gphotos[lbIndex];
+    lbImg.src=img.src;
+    lbImg.alt=img.alt;
+    lbCounter.textContent=(lbIndex+1)+' / '+gphotos.length;
+  }
   window.submitModal=function(e,mid,url){
     e.preventDefault();var form=e.target,data={};new FormData(form).forEach(function(v,k){data[k]=v});
     var btn=form.querySelector('[type=submit]');btn.textContent='Sending…';btn.disabled=true;
