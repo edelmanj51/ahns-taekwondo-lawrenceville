@@ -77,7 +77,7 @@
     .prog-tab.active,.prog-tab:hover{border-color:var(--blue);background:var(--blue);color:var(--white)}
     /* ── Schedule table ── */
     .schedule-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:var(--radius-lg);box-shadow:var(--shadow);max-width:1100px;margin:0 auto}
-    table.sched{width:100%;border-collapse:collapse;background:var(--white);min-width:640px}
+    table.sched{width:100%;border-collapse:collapse;background:var(--white);min-width:980px}
     table.sched thead th{background:var(--dark);color:var(--white);padding:16px 14px;font-size:14px;font-weight:700;text-align:center;letter-spacing:.4px}
     table.sched thead th:first-child{text-align:left;width:160px;background:#07101e}
     table.sched tbody tr:nth-child(even){background:var(--light)}
@@ -211,30 +211,102 @@
 
   <div class="schedule-wrap reveal">
     <table class="sched">
-      <thead><tr><th>Day</th><th>Class</th><th>Age / Belt Group</th><th>Time</th><th>Notes</th></tr></thead>
+      <thead><tr><th>Class</th><th>Age / Belt Group</th><th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th><th>Friday</th><th>Saturday</th><th>Notes</th></tr></thead>
       <tbody>
-        <tr><td rowspan="3">Monday</td><td><div class="class-name"><span class="class-dot" style="background:#fef3c7;border:1px solid #d97706"></span>Little Tiger</div></td><td>3.5–6 years old</td><td><span class="time-slot kids">5:50 – 6:20 PM</span></td><td class="bbc-note">Little Tigers program members only</td></tr>
-        <tr><td><div class="class-name"><span class="class-dot" style="background:#e0e7ff;border:1px solid #4338ca"></span>High and Black</div></td><td>Brown, Red, Jr. Black, Jr. Black Star &amp; Black belts</td><td><span class="time-slot">6:20 – 7:05 PM</span></td><td class="bbc-note"></td></tr>
-        <tr><td><div class="class-name"><span class="class-dot" style="background:#dbeafe;border:1px solid #3b82f6"></span>Teens and Adults</div></td><td>12 years and up</td><td><span class="time-slot adult">7:25 – 8:05 PM</span></td><td class="bbc-note"></td></tr>
-
-        <tr><td rowspan="2">Tuesday</td><td><div class="class-name"><span class="class-dot" style="background:#d1fae5;border:1px solid #059669"></span>Low to Mid</div></td><td>White, Yellow Stripe, Yellow, Orange, Green, Blue &amp; Purple belts</td><td><span class="time-slot teens">5:10 – 5:50 PM</span></td><td class="bbc-note"></td></tr>
-        <tr><td><div class="class-name"><span class="class-dot" style="background:#e0e7ff;border:1px solid #4338ca"></span>High and Black</div></td><td>Brown, Red, Jr. Black, Jr. Black Star &amp; Black belts</td><td><span class="time-slot">6:10 – 6:50 PM</span></td><td class="bbc-note"></td></tr>
-
-        <tr><td rowspan="3">Wednesday</td><td><div class="class-name"><span class="class-dot" style="background:#fef3c7;border:1px solid #d97706"></span>Little Tiger</div></td><td>3.5–6 years old</td><td><span class="time-slot kids">5:10 – 5:40 PM</span></td><td class="bbc-note">Little Tigers program members only</td></tr>
-        <tr><td><div class="class-name"><span class="class-dot" style="background:#d1fae5;border:1px solid #059669"></span>Low to Mid</div></td><td>White through Purple belts</td><td><span class="time-slot teens">5:45 – 6:25 PM</span></td><td class="bbc-note"></td></tr>
-        <tr><td><div class="class-name"><span class="class-dot" style="background:#e2e8f0;border:1px solid #334155"></span>Black</div></td><td>Black belts only</td><td><span class="time-slot">6:45 – 7:25 PM</span></td><td class="bbc-note"></td></tr>
-
-        <tr><td rowspan="3">Thursday</td><td><div class="class-name"><span class="class-dot" style="background:#e0e7ff;border:1px solid #4338ca"></span>High and Black</div></td><td>Brown, Red, Jr. Black, Jr. Black Star &amp; Black belts</td><td><span class="time-slot">5:20 – 6:00 PM</span></td><td class="bbc-note"></td></tr>
-        <tr><td><div class="class-name"><span class="class-dot" style="background:#d1fae5;border:1px solid #059669"></span>Low to Mid</div></td><td>White through Purple belts</td><td><span class="time-slot teens">6:20 – 7:00 PM</span></td><td class="bbc-note"></td></tr>
-        <tr><td><div class="class-name"><span class="class-dot" style="background:#dbeafe;border:1px solid #3b82f6"></span>Teens and Adults</div></td><td>12 years and up</td><td><span class="time-slot adult">7:20 – 8:00 PM</span></td><td class="bbc-note"></td></tr>
-
-        <tr><td rowspan="3">Friday</td><td><div class="class-name"><span class="class-dot" style="background:#fef3c7;border:1px solid #d97706"></span>Little Tiger</div></td><td>3.5–6 years old</td><td><span class="time-slot kids">5:20 – 5:50 PM</span></td><td class="bbc-note">Little Tigers program members only</td></tr>
-        <tr><td><div class="class-name"><span class="class-dot" style="background:#ede9fe;border:1px solid #7c3aed"></span>All</div></td><td>All color belts, White to Black</td><td><span class="time-slot">5:55 – 6:35 PM</span></td><td class="bbc-note"></td></tr>
-        <tr><td><div class="class-name"><span class="class-dot" style="background:#fef9c3;border:1px solid #ca8a04"></span>Pre-Instructors</div></td><td>By special invitation</td><td><span class="time-slot">6:55 – 7:55 PM</span></td><td class="bbc-note">Invitation only — special invitation by Masters</td></tr>
-
-        <tr><td>Saturday</td><td><div class="class-name"><span class="class-dot" style="background:#fce7f3;border:1px solid #db2777"></span>Birthday Party</div></td><td>Event booking</td><td><span class="time-slot comp">1:00 – 2:30 PM</span></td><td class="bbc-note">Not a regular class — event booking</td></tr>
-
-        <tr><td>Any Day</td><td><div class="class-name"><span class="class-dot" style="background:#f1f5f9;border:1px solid #94a3b8"></span>Private Lessons</div></td><td>Available across the week</td><td><span class="time-empty">By appointment</span></td><td class="bbc-note">By appointment with the Masters only</td></tr>
+        <tr>
+          <td><div class="class-name"><span class="class-dot" style="background:#fef3c7;border:1px solid #d97706"></span>Little Tiger</div></td>
+          <td>3.5–6 years old</td>
+          <td><span class="time-slot kids">5:50–6:20 PM</span></td>
+          <td><span class="time-empty">—</span></td>
+          <td><span class="time-slot kids">5:10–5:40 PM</span></td>
+          <td><span class="time-empty">—</span></td>
+          <td><span class="time-slot kids">5:20–5:50 PM</span></td>
+          <td><span class="time-empty">—</span></td>
+          <td class="bbc-note">Little Tigers program members only</td>
+        </tr>
+        <tr>
+          <td><div class="class-name"><span class="class-dot" style="background:#d1fae5;border:1px solid #059669"></span>Low to Mid</div></td>
+          <td>White, Yellow Stripe, Yellow, Orange, Green, Blue &amp; Purple belts</td>
+          <td><span class="time-empty">—</span></td>
+          <td><span class="time-slot teens">5:10–5:50 PM</span></td>
+          <td><span class="time-slot teens">5:45–6:25 PM</span></td>
+          <td><span class="time-slot teens">6:20–7:00 PM</span></td>
+          <td><span class="time-empty">—</span></td>
+          <td><span class="time-empty">—</span></td>
+          <td class="bbc-note"></td>
+        </tr>
+        <tr>
+          <td><div class="class-name"><span class="class-dot" style="background:#e0e7ff;border:1px solid #4338ca"></span>High and Black</div></td>
+          <td>Brown, Red, Jr. Black, Jr. Black Star &amp; Black belts</td>
+          <td><span class="time-slot">6:20–7:05 PM</span></td>
+          <td><span class="time-slot">6:10–6:50 PM</span></td>
+          <td><span class="time-empty">—</span></td>
+          <td><span class="time-slot">5:20–6:00 PM</span></td>
+          <td><span class="time-empty">—</span></td>
+          <td><span class="time-empty">—</span></td>
+          <td class="bbc-note"></td>
+        </tr>
+        <tr>
+          <td><div class="class-name"><span class="class-dot" style="background:#e2e8f0;border:1px solid #334155"></span>Black</div></td>
+          <td>Black belts only</td>
+          <td><span class="time-empty">—</span></td>
+          <td><span class="time-empty">—</span></td>
+          <td><span class="time-slot">6:45–7:25 PM</span></td>
+          <td><span class="time-empty">—</span></td>
+          <td><span class="time-empty">—</span></td>
+          <td><span class="time-empty">—</span></td>
+          <td class="bbc-note"></td>
+        </tr>
+        <tr>
+          <td><div class="class-name"><span class="class-dot" style="background:#dbeafe;border:1px solid #3b82f6"></span>Teens and Adults</div></td>
+          <td>12 years and up</td>
+          <td><span class="time-slot adult">7:25–8:05 PM</span></td>
+          <td><span class="time-empty">—</span></td>
+          <td><span class="time-empty">—</span></td>
+          <td><span class="time-slot adult">7:20–8:00 PM</span></td>
+          <td><span class="time-empty">—</span></td>
+          <td><span class="time-empty">—</span></td>
+          <td class="bbc-note"></td>
+        </tr>
+        <tr>
+          <td><div class="class-name"><span class="class-dot" style="background:#ede9fe;border:1px solid #7c3aed"></span>All</div></td>
+          <td>All color belts, White to Black</td>
+          <td><span class="time-empty">—</span></td>
+          <td><span class="time-empty">—</span></td>
+          <td><span class="time-empty">—</span></td>
+          <td><span class="time-empty">—</span></td>
+          <td><span class="time-slot">5:55–6:35 PM</span></td>
+          <td><span class="time-empty">—</span></td>
+          <td class="bbc-note"></td>
+        </tr>
+        <tr>
+          <td><div class="class-name"><span class="class-dot" style="background:#fef9c3;border:1px solid #ca8a04"></span>Pre-Instructors</div></td>
+          <td>By special invitation</td>
+          <td><span class="time-empty">—</span></td>
+          <td><span class="time-empty">—</span></td>
+          <td><span class="time-empty">—</span></td>
+          <td><span class="time-empty">—</span></td>
+          <td><span class="time-slot">6:55–7:55 PM</span></td>
+          <td><span class="time-empty">—</span></td>
+          <td class="bbc-note">Invitation only — special invitation by Masters</td>
+        </tr>
+        <tr>
+          <td><div class="class-name"><span class="class-dot" style="background:#fce7f3;border:1px solid #db2777"></span>Birthday Party</div></td>
+          <td>Event booking</td>
+          <td><span class="time-empty">—</span></td>
+          <td><span class="time-empty">—</span></td>
+          <td><span class="time-empty">—</span></td>
+          <td><span class="time-empty">—</span></td>
+          <td><span class="time-empty">—</span></td>
+          <td><span class="time-slot comp">1:00–2:30 PM</span></td>
+          <td class="bbc-note">Not a regular class — event booking</td>
+        </tr>
+        <tr>
+          <td><div class="class-name"><span class="class-dot" style="background:#f1f5f9;border:1px solid #94a3b8"></span>Private Lessons</div></td>
+          <td>Available across the week</td>
+          <td colspan="6"><span class="time-empty">By appointment</span></td>
+          <td class="bbc-note">By appointment with the Masters only</td>
+        </tr>
       </tbody>
     </table>
   </div>
