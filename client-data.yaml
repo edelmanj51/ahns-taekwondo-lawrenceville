@@ -57,7 +57,7 @@ PROGRAM_1_DESCRIPTION: "Designed for our youngest martial artists, Little Tigers
 PROGRAM_1_AUDIENCE_KIDS: "1"
 
 PROGRAM_2_NAME: "Kids Taekwondo"
-PROGRAM_2_PHOTO: images/quick-tour/quick-tour-1.jpg
+PROGRAM_2_PHOTO: images/programs/program-2/main.jpg
 PROGRAM_2_AGE_RANGE: "Ages 7–12"
 PROGRAM_2_DAYS: "Mon–Fri · Multiple class times"
 PROGRAM_2_SESSION_LEN: "45-min classes"
@@ -65,7 +65,7 @@ PROGRAM_2_DESCRIPTION: "Our kids' program builds a strong foundation for charact
 PROGRAM_2_AUDIENCE_KIDS: "1"
 
 PROGRAM_3_NAME: "Teens & Adults"
-PROGRAM_3_PHOTO: images/quick-tour/quick-tour-2.jpg
+PROGRAM_3_PHOTO: images/programs/program-3/main.jpg
 PROGRAM_3_AGE_RANGE: "Ages 13 & Up"
 PROGRAM_3_DAYS: "Mon–Fri 3:00–8:00pm"
 PROGRAM_3_SESSION_LEN: "60-min classes"
@@ -74,7 +74,7 @@ PROGRAM_3_AUDIENCE_TEENS: "1"
 PROGRAM_3_AUDIENCE_ADULTS: "1"
 
 PROGRAM_4_NAME: "Family Taekwondo"
-PROGRAM_4_PHOTO: images/quick-tour/quick-tour-3.jpg
+PROGRAM_4_PHOTO: images/programs/program-4/main.jpg
 PROGRAM_4_AGE_RANGE: "All Ages"
 PROGRAM_4_DAYS: "Mon–Fri · Multiple class times"
 PROGRAM_4_SESSION_LEN: "45–60 min classes"
