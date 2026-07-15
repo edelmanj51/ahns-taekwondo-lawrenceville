@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Programs | Ahn's Taekwondo Martial Arts in Lawrenceville</title>
-  <meta name="description" content="Explore all martial arts programs at Ahn's Taekwondo in Lawrenceville — kids, teens, adults, and competition training.">
+  <title>Our Instructors | Ahn's Taekwondo Martial Arts in Lawrenceville</title>
+  <meta name="description" content="Meet the full coaching staff at Ahn's Taekwondo Lawrenceville — Kukkiwon-certified Masters and instructors dedicated to building confidence, discipline, and champions.">
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     html{scroll-behavior:smooth;font-size:16px}
@@ -65,36 +65,37 @@
     .page-banner{background:linear-gradient(135deg,#07101e 0%,#1a3a6e 100%);color:white;padding:130px 24px 64px;text-align:center}
     .page-banner h1{font-size:clamp(32px,5vw,56px);font-weight:900;line-height:1.1;margin-bottom:14px}
     .page-banner p{font-size:18px;opacity:.8;max-width:600px;margin:0 auto}
-    /* ── Programs ── */
-    #programs-list{padding:80px 24px}
-    .programs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:32px;max-width:1200px;margin:0 auto}
-    .prog-card{background:var(--white);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s}
-    .prog-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg)}
-    .prog-photo{
-      /* SWAP: Replace with <img src="program.jpg" alt="Program Name"> */
-      height:240px;background:linear-gradient(135deg,#1a3a6e,#2563eb);
-      display:flex;align-items:center;justify-content:center;
-      color:rgba(255,255,255,.25);font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase
-    }
-    .prog-photo.c1{background:linear-gradient(135deg,#1a3a6e,#2563eb)}
-    .prog-photo.c2{background:linear-gradient(135deg,#0f172a,#1a3a6e)}
-    .prog-photo.c3{background:linear-gradient(135deg,#1e3a5f,#374151)}
-    .prog-photo.c4{background:linear-gradient(135deg,#3b0764,#1e3a5f)}
-    .prog-photo.c5{background:linear-gradient(135deg,#07101e,#1e293b)}
-    .prog-body{padding:28px}
-    .prog-tag{display:inline-block;background:var(--blue-light);color:var(--blue);padding:4px 12px;border-radius:20px;font-size:12px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;margin-bottom:12px}
-    .prog-body h2{font-size:22px;font-weight:800;color:var(--dark);margin-bottom:10px}
-    .prog-body p{font-size:15px;color:var(--gray);line-height:1.65;margin-bottom:18px}
-    .prog-meta{display:flex;gap:16px;margin-bottom:22px;flex-wrap:wrap}
-    .prog-meta span{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--gray);font-weight:600}
-    .prog-meta span::before{content:'';width:6px;height:6px;background:var(--blue);border-radius:50%;flex-shrink:0}
-    .prog-body .btn{width:100%;padding:13px;font-size:15px}
-    /* ── Bottom CTA ── */
-    .programs-cta{background:linear-gradient(135deg,#07101e,#1a3a6e);padding:80px 24px;text-align:center;color:white}
-    .programs-cta h2{font-size:clamp(28px,4vw,44px);font-weight:900;margin-bottom:14px}
-    .programs-cta p{font-size:18px;opacity:.8;margin-bottom:36px;max-width:540px;margin-left:auto;margin-right:auto}
-    .cta-pair{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
-    @media(max-width:480px){.cta-pair{flex-direction:column;align-items:stretch}.cta-pair .btn{width:100%}}
+    /* ── Featured instructors ── */
+    #featured{padding:80px 24px;background:var(--white)}
+    #featured .container{max-width:900px}
+    .section-eyebrow{display:block;font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);margin-bottom:10px}
+    .instructor-inner{display:grid;grid-template-columns:300px 1fr;gap:48px;align-items:start;max-width:900px;margin:0 auto}
+    .instructor-photo{position:relative}
+    .instructor-photo img{width:100%;border-radius:var(--radius-lg);box-shadow:var(--shadow-lg);aspect-ratio:3/4;object-fit:cover;object-position:top}
+    .instructor-badge{position:absolute;bottom:16px;left:16px;right:16px;background:var(--primary);color:white;padding:8px 12px;border-radius:var(--radius);font-size:13px;font-weight:700;text-align:center}
+    .instructor-name{font-size:clamp(24px,3vw,34px);font-weight:900;color:var(--dark);margin-bottom:6px}
+    .instructor-credential{font-size:14px;font-weight:700;color:var(--blue);text-transform:uppercase;letter-spacing:.06em;margin-bottom:16px}
+    .instructor-bio{font-size:16px;color:var(--dark-2);line-height:1.75}
+    .divider{border:none;border-top:1px solid var(--gray-light);margin:60px auto;max-width:900px}
+    @media(max-width:700px){.instructor-inner{grid-template-columns:1fr;gap:24px}}
+    /* ── Full roster grid ── */
+    #full-roster{padding:80px 24px;background:var(--light)}
+    .roster-header{text-align:center;margin-bottom:48px}
+    .roster-header h2{font-size:clamp(26px,3.5vw,38px);font-weight:900;color:var(--dark);margin-bottom:10px}
+    .roster-header p{font-size:17px;color:var(--gray)}
+    .coaches-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:24px;max-width:1100px;margin:0 auto}
+    .coach-card{background:var(--white);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s}
+    .coach-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+    .coach-card img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:top}
+    .coach-info{padding:14px 16px}
+    .coach-name{font-weight:700;color:var(--dark);font-size:15px;margin-bottom:3px}
+    .coach-title{font-size:12px;color:var(--gray);line-height:1.4}
+    /* ── CTA ── */
+    .instructors-cta{background:linear-gradient(135deg,#07101e,#1a3a6e);padding:80px 24px;text-align:center;color:white}
+    .instructors-cta h2{font-size:clamp(28px,4vw,44px);font-weight:900;margin-bottom:14px}
+    .instructors-cta p{font-size:18px;opacity:.8;margin-bottom:36px;max-width:540px;margin-left:auto;margin-right:auto}
+    .instructors-cta .cta-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+    @media(max-width:480px){.cta-btns{flex-direction:column;align-items:stretch}.cta-btns .btn{width:100%}}
     /* ── Scroll reveal ── */
     .reveal{opacity:0;transform:translateY(28px);transition:opacity .55s ease,transform .55s ease}
     .reveal.visible{opacity:1;transform:translateY(0)}
@@ -163,9 +164,9 @@
 
             <a href="program-4.html">Family Taekwondo</a>
 
-            
 
-            
+
+
           </div>
         </div>
         <a href="quick-tour.html">Quick Tour</a>
@@ -186,85 +187,89 @@
   </div>
 </header>
 
-<section class="page-banner">
-  <h1>Our Programs</h1>
-  <p>Find the perfect program for your age, goals, and schedule — we have something for everyone.</p>
-</section>
+<div class="page-banner">
+  <h1>Meet Our Coaching Staff</h1>
+  <p>Five certified instructors. Decades of combined Taekwondo experience, right here in Lawrenceville.</p>
+</div>
 
-<section id="programs-list">
-  <div class="programs-grid">
+<!-- ── Featured instructors ────────────────────────────────────────────────── -->
+<section id="featured">
+  <div class="container">
 
-    <article class="prog-card reveal" id="program-1">
-      <img src="images/programs/program-1/main.jpg" alt="Little Tigers" loading="lazy" style="width:100%;aspect-ratio:16/9;object-fit:cover;object-position:top">
-      <div class="prog-body">
-        <span class="prog-tag">Ages 3.5–6</span>
-        <h2>Little Tigers</h2>
-        <p>Fun, structured Taekwondo classes that build real confidence, discipline, and self-defense skills. Our instructors create a safe, welcoming environment where every student can thrive.</p>
-        <div class="prog-meta">
-          <span>Multiple times weekly</span>
-          <span>30-min classes</span>
-        </div>
-        <a href="program-1.html" class="btn btn-primary">Learn More</a>
+    <div class="instructor-inner reveal">
+      <div class="instructor-photo">
+        <img src="images/instructor/master-park.jpg" alt="Master Hongryong Park" loading="lazy">
+        <div class="instructor-badge">6th Degree Black Belt · Head Instructor &amp; Owner</div>
       </div>
-    </article>
-
-    <article class="prog-card reveal" id="program-2">
-      <img src="images/programs/program-2/main.jpg" alt="Kids Taekwondo" loading="lazy" style="width:100%;aspect-ratio:16/9;object-fit:cover;object-position:top">
-      <div class="prog-body">
-        <span class="prog-tag">Ages 7–12</span>
-        <h2>Kids Taekwondo</h2>
-        <p>Learn Taekwondo in a structured curriculum with real belt standards. Build self-defense skills, get fit, and train in a welcoming community — no experience required.</p>
-        <div class="prog-meta">
-          <span>Mon–Fri · Multiple class times</span>
-          <span>45-min classes</span>
+      <div>
+        <span class="section-eyebrow">Head Instructor</span>
+        <h2 class="instructor-name">Master Hongryong Park</h2>
+        <p class="instructor-credential">6th Degree Black Belt &middot; Head Instructor &amp; Owner</p>
+        <p class="instructor-bio">Master Hongryong Park is the Head Instructor at Ahn's Taekwondo Academy in Lawrenceville, NJ. He is an integral part of Ahn's Taekwondo and was the Head Instructor at the Montgomery location for 14 years. He is one of the youngest Kukkiwon Certified 6th Degree Black Belts. He was a Taekwondo representative athlete of his middle and high school in South Korea, where he was required to train daily for 7 to 8 hours. With sparring as his specialty, Master Park has won numerous Gold Medals in multiple Korean Taekwondo Sparring Tournaments. As well as being an expert in his field, Master Park is incredible with children with his patience and kindness. He puts extra care into each student and knows how to bring out the fun while teaching discipline, focus, respect, and perseverance.</p>
+        <div style="margin-top:28px">
+          <button class="btn btn-primary" onclick="openModal('modal-trial')">Train With Us</button>
         </div>
-        <a href="program-2.html" class="btn btn-primary">Learn More</a>
       </div>
-    </article>
+    </div>
 
-    <article class="prog-card reveal" id="program-3">
-      <img src="images/programs/program-3/main.jpg" alt="Teens & Adults" loading="lazy" style="width:100%;aspect-ratio:16/9;object-fit:cover;object-position:top">
-      <div class="prog-body">
-        <span class="prog-tag">Ages 13 & Up</span>
-        <h2>Teens & Adults</h2>
-        <p>Develop real Taekwondo skills, build strength and focus, and train alongside a welcoming community — no prior experience needed.</p>
-        <div class="prog-meta">
-          <span>Mon–Fri 3:00–8:00pm</span>
-          <span>60-min classes</span>
-        </div>
-        <a href="program-3.html" class="btn btn-primary">Learn More</a>
+    <hr class="divider">
+
+    <div class="instructor-inner reveal">
+      <div class="instructor-photo">
+        <img src="images/instructor/master-howe.jpg" alt="Master Liza Howe" loading="lazy">
+        <div class="instructor-badge">4th Degree Black Belt · Instructor</div>
       </div>
-    </article>
-
-    <article class="prog-card reveal" id="program-4">
-      <img src="images/programs/program-4/main.jpg" alt="Family Taekwondo" loading="lazy" style="width:100%;aspect-ratio:16/9;object-fit:cover;object-position:top">
-      <div class="prog-body">
-        <span class="prog-tag">All Ages</span>
-        <h2>Family Taekwondo</h2>
-        <p>Take your training to the next level with focused coaching, real competition prep, and a team that pushes you to perform your best.</p>
-        <div class="prog-meta">
-          <span>Mon–Fri · Multiple class times</span>
-          <span>45–60 min classes</span>
-        </div>
-        <a href="program-4.html" class="btn btn-primary">Learn More</a>
+      <div>
+        <span class="section-eyebrow">Senior Instructor</span>
+        <h2 class="instructor-name">Master Liza Howe</h2>
+        <p class="instructor-credential">4th Degree Black Belt &middot; Instructor</p>
+        <p class="instructor-bio">Master Liza Howe is an instructor at Ahn's Taekwondo Academy in Lawrenceville, NJ. She is a product of our parents program in the Skillman location, and started Taekwondo after her daughter got her 2nd degree black belt. She has been practicing and training in Taekwondo since 2014, and is a Kukkiwon-certified 4th degree black belt. Master Howe grew to love forms and has competed extensively — locally, regionally, nationally, and even in a couple of international competitions. She has been helping in Ahn's classes since 2016, and enjoys teaching all ages.</p>
       </div>
-    </article>
-
-    
-
-    
+    </div>
 
   </div>
 </section>
 
-<section class="programs-cta">
-  <h2>Not Sure Which Program Is Right For You?</h2>
-  <p>Book a free trial and we'll help you find the perfect fit — no experience needed, no pressure.</p>
-  <div class="cta-pair">
+<!-- ── Full roster grid ────────────────────────────────────────────────────── -->
+<section id="full-roster">
+  <div class="roster-header reveal">
+    <h2>Our Full Faculty</h2>
+    <p>Every instructor at Ahn's Taekwondo Lawrenceville brings real rank, real experience, and a passion for developing students.</p>
+  </div>
+  <div class="coaches-grid">
+    <div class="coach-card reveal">
+      <img src="images/instructor/sophia-cruz.png" alt="Sophia Cruz" loading="lazy">
+      <div class="coach-info">
+        <div class="coach-name">Sophia Cruz</div>
+        <div class="coach-title">Junior Instructor &middot; 3rd Degree Black Belt</div>
+      </div>
+    </div>
+    <div class="coach-card reveal">
+      <img src="images/instructor/seohyun-kim.jpg" alt="Seohyun Kim" loading="lazy">
+      <div class="coach-info">
+        <div class="coach-name">Seohyun Kim</div>
+        <div class="coach-title">Instructor &middot; 3rd Degree Black Belt</div>
+      </div>
+    </div>
+    <div class="coach-card reveal">
+      <img src="images/instructor/nanditha-viswanathan.jpg" alt="Nanditha Viswanathan" loading="lazy">
+      <div class="coach-info">
+        <div class="coach-name">Nanditha Viswanathan</div>
+        <div class="coach-title">Instructor &middot; 3rd Degree Black Belt</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA ────────────────────────────────────────────────────────────────── -->
+<div class="instructors-cta">
+  <h2>Ready to Train With Us?</h2>
+  <p>Your first class is completely free — no experience required.</p>
+  <div class="cta-btns">
     <button class="btn btn-primary" onclick="openModal('modal-trial')">Book Free Trial</button>
-    <button class="btn btn-ghost" onclick="openModal('modal-kit')">Get Pricing &amp; Schedule</button>
+    <button class="btn btn-ghost" onclick="openModal('modal-kit')">Get Pricing Guide</button>
   </div>
-</section>
+</div>
 
 <footer id="footer">
   <div class="footer-grid">
@@ -284,15 +289,15 @@
     <div class="footer-col">
       <h3>Programs</h3>
       <ul>
-        <li><a href="programs.html#program-1">Little Tigers</a></li>
-        <li><a href="programs.html#program-2">Kids Taekwondo</a></li>
+        <li><a href="program-1.html">Little Tigers</a></li>
+        <li><a href="program-2.html">Kids Taekwondo</a></li>
         <li><a href="program-3.html">Teens & Adults</a></li>
 
         <li><a href="program-4.html">Family Taekwondo</a></li>
 
-        
 
-        
+
+
       </ul>
     </div>
     <div class="footer-col">
@@ -314,7 +319,7 @@
         <div class="footer-contact-row"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>160 Lawrenceville-Pennington Rd<br>Lawrenceville, NJ 08648</div>
         <div class="footer-contact-row"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg><a href="tel:(908) 331-1445">(908) 331-1445</a></div>
         <div class="footer-contact-row"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg><a href="mailto:ahnsrdtkd@gmail.com">ahnsrdtkd@gmail.com</a></div>
-        
+
       </address>
     </div>
   </div>
