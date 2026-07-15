@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>News &amp; Updates | Ahn's Taekwondo Martial Arts in Lawrenceville</title>
-  <meta name="description" content="Latest news, events, and updates from Ahn's Taekwondo in Lawrenceville. Stay in the loop with our martial arts community.">
+  <title>Enroll Your Child in Fun &amp; Discipline-Focused Taekwondo Classes in Lawrenceville, NJ | Ahn's Taekwondo</title>
+  <meta name="description" content="Taekwondo combines fun, fitness, discipline, and life skills. See why Ahn's Taekwondo in Lawrenceville, NJ is the right choice for your child.">
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     html{scroll-behavior:smooth;font-size:16px}
@@ -32,14 +32,10 @@
     .btn-primary:hover{background:var(--red-dark);border-color:var(--red-dark);transform:translateY(-2px);box-shadow:var(--shadow)}
     .btn-ghost{background:transparent;color:var(--white);border:2px solid rgba(255,255,255,.7)}
     .btn-ghost:hover{background:var(--white);color:var(--dark);transform:translateY(-2px)}
-    .btn-outline{background:transparent;color:var(--blue);border:2px solid var(--blue)}
-    .btn-outline:hover{background:var(--blue);color:var(--white);transform:translateY(-2px)}
     /* ── Header ── */
     #header{position:fixed;top:0;left:0;right:0;z-index:1000;background:var(--white);box-shadow:0 2px 20px rgba(0,0,0,.07);transition:box-shadow .3s}
     .header-inner{display:flex;align-items:center;justify-content:space-between;height:72px;gap:20px}
     .logo{display:flex;align-items:center;gap:10px;font-size:21px;font-weight:900;color:var(--dark);white-space:nowrap;letter-spacing:-.4px;flex-shrink:0}
-    .logo-icon{width:40px;height:40px;background:var(--blue);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-    .logo-icon svg{width:22px;height:22px;fill:white}
     #main-nav{display:flex;align-items:center;gap:4px;flex:1;justify-content:center}
     #main-nav>a,.nav-dropdown>a{padding:8px 13px;border-radius:6px;font-weight:600;font-size:15px;color:var(--dark-2);transition:var(--transition);display:flex;align-items:center;gap:4px}
     #main-nav>a:hover,.nav-dropdown>a:hover{background:var(--light);color:var(--blue)}
@@ -65,51 +61,30 @@
     }
     /* ── Page banner ── */
     .page-banner{background:linear-gradient(135deg,#07101e 0%,#1a3a6e 100%);color:white;padding:130px 24px 64px;text-align:center}
-    .page-banner h1{font-size:clamp(32px,5vw,56px);font-weight:900;line-height:1.1;margin-bottom:14px}
-    .page-banner p{font-size:18px;opacity:.8;max-width:600px;margin:0 auto}
-    /* ── Blog section ── */
-    #blog{padding:72px 24px}
-    .blog-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:32px;max-width:1100px;margin:0 auto}
-    /* ── Article card ── */
-    .article-card{background:var(--white);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow);transition:var(--transition)}
-    .article-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
-    .article-photo{height:220px;position:relative;overflow:hidden}
-    /* SWAP: replace .article-photo div with <img src="news-N.jpg" alt="[Article title]" loading="lazy" style="width:100%;height:100%;object-fit:cover"> */
-    .article-photo-placeholder{width:100%;height:100%;display:flex;align-items:center;justify-content:center}
-    .article-photo-placeholder svg{width:48px;height:48px;fill:rgba(255,255,255,.4)}
-    .article-tag{position:absolute;top:14px;left:14px;background:var(--blue);color:white;font-size:12px;font-weight:700;padding:4px 10px;border-radius:4px;text-transform:uppercase;letter-spacing:.6px}
-    .article-body{padding:24px}
-    .article-meta{display:flex;align-items:center;gap:14px;margin-bottom:10px}
-    .article-date{font-size:13px;color:var(--gray);font-weight:500}
-    .article-author{font-size:13px;color:var(--gray)}
-    .article-author::before{content:'·';margin-right:14px}
-    .article-title{font-size:20px;font-weight:800;color:var(--dark);line-height:1.3;margin-bottom:10px}
-    .article-excerpt{font-size:14px;color:var(--gray);line-height:1.75;margin-bottom:20px}
-    .article-read-more{display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:700;color:var(--blue);transition:gap .2s}
-    .article-read-more:hover{gap:10px}
-    .article-read-more svg{width:16px;height:16px;fill:var(--blue)}
-    /* ── Featured article (first card full-width) ── */
-    .article-card.featured{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr}
-    .article-card.featured .article-photo{height:100%;min-height:280px}
-    @media(max-width:700px){.article-card.featured{grid-column:auto;display:block}.article-card.featured .article-photo{height:220px}}
-    /* ── Sidebar newsletter strip ── */
-    .newsletter-strip{background:var(--blue-light);border-radius:var(--radius-lg);padding:36px 32px;text-align:center;max-width:1100px;margin:48px auto 0}
-    .newsletter-strip h3{font-size:22px;font-weight:800;color:var(--dark);margin-bottom:8px}
-    .newsletter-strip p{font-size:15px;color:var(--gray);margin-bottom:22px}
-    .newsletter-form{display:flex;gap:10px;max-width:440px;margin:0 auto;flex-wrap:wrap;justify-content:center}
-    .newsletter-form input{flex:1;min-width:200px;padding:12px 14px;border-radius:var(--radius);border:1.5px solid var(--gray-light);font-size:15px;font-family:inherit;color:var(--dark)}
-    .newsletter-form input:focus{outline:none;border-color:var(--blue)}
-    .newsletter-form button{padding:12px 22px;background:var(--blue);color:white;border-radius:var(--radius);font-weight:700;font-size:15px;border:none;cursor:pointer;transition:var(--transition);font-family:inherit}
-    .newsletter-form button:hover{background:var(--blue-dark)}
+    .page-banner h1{font-size:clamp(28px,4vw,48px);font-weight:900;line-height:1.2;margin-bottom:14px;max-width:820px;margin-left:auto;margin-right:auto}
+    .page-banner .post-meta{font-size:15px;opacity:.7}
+    /* ── Post body ── */
+    .post-wrap{max-width:820px;margin:0 auto;padding:64px 24px 80px}
+    .post-featured-img{border-radius:var(--radius-lg);overflow:hidden;margin-bottom:40px;box-shadow:var(--shadow)}
+    .post-featured-img img{width:100%;height:auto}
+    .post-body{font-size:17px;line-height:1.8;color:var(--dark-2)}
+    .post-body h1,.post-body h2,.post-body h3{font-weight:800;color:var(--dark);margin:32px 0 14px;line-height:1.3}
+    .post-body h1{font-size:28px}.post-body h2{font-size:24px}.post-body h3{font-size:20px}
+    .post-body p{margin-bottom:18px}
+    .post-body ul,.post-body ol{margin:0 0 18px 24px;list-style:disc}
+    .post-body li{margin-bottom:8px}
+    .post-body strong{font-weight:700;color:var(--dark)}
+    .post-body em{font-style:italic}
+    .post-body hr{border:none;border-top:2px solid var(--gray-light);margin:32px 0}
+    .post-body a{color:var(--blue);text-decoration:underline}
+    .back-link{display:inline-flex;align-items:center;gap:8px;color:var(--blue);font-weight:600;font-size:15px;margin-bottom:32px;transition:var(--transition)}
+    .back-link:hover{color:var(--blue-dark)}
     /* ── CTA ── */
-    .news-cta{background:linear-gradient(135deg,#07101e,#1a3a6e);padding:80px 24px;text-align:center;color:white;margin-top:72px}
-    .news-cta h2{font-size:clamp(28px,4vw,44px);font-weight:900;margin-bottom:14px}
-    .news-cta p{font-size:18px;opacity:.8;margin-bottom:36px;max-width:540px;margin-left:auto;margin-right:auto}
+    .post-cta{background:linear-gradient(135deg,#07101e,#1a3a6e);padding:80px 24px;text-align:center;color:white}
+    .post-cta h2{font-size:clamp(26px,3.5vw,40px);font-weight:900;margin-bottom:14px}
+    .post-cta p{font-size:18px;opacity:.8;margin-bottom:36px;max-width:540px;margin-left:auto;margin-right:auto}
     .cta-pair{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
     @media(max-width:480px){.cta-pair{flex-direction:column;align-items:stretch}.cta-pair .btn{width:100%}}
-    /* ── Scroll reveal ── */
-    .reveal{opacity:0;transform:translateY(28px);transition:opacity .55s ease,transform .55s ease}
-    .reveal.visible{opacity:1;transform:translateY(0)}
     /* ── Footer ── */
     #footer{background:#06101e;color:rgba(255,255,255,.72);padding:64px 24px 28px}
     .footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.1fr;gap:48px;max-width:1200px;margin:0 auto 52px}
@@ -175,9 +150,9 @@
 
             <a href="program-4.html">Family Taekwondo</a>
 
-            
 
-            
+
+
           </div>
         </div>
         <a href="quick-tour.html">Quick Tour</a>
@@ -199,49 +174,83 @@
 </header>
 
 <section class="page-banner">
-  <h1>News &amp; Updates</h1>
-  <p>Stay connected with everything happening at Ahn's Taekwondo — events, milestones, and community stories.</p>
+  <h1>Enroll Your Child in Fun &amp; Discipline-Focused Taekwondo Classes in Lawrenceville, NJ</h1>
+  <p class="post-meta">September 18, 2024</p>
 </section>
 
-<section id="blog">
-  <div class="container">
-    <div class="blog-grid">
+<div class="post-wrap">
+  <a href="news.html" class="back-link">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+    Back to News &amp; Updates
+  </a>
+  <div class="post-featured-img"><img src="images/blog/enroll-your-child.jpeg" alt="Kids training Taekwondo at Ahn's Taekwondo Lawrenceville"></div>
+  <div class="post-body">
+    <p>As a parent, you want the best for your child. Whether it's education, social experiences, or extracurricular activities, every decision plays a role in shaping their future. If you're considering an activity that combines fun, fitness, discipline, and life skills, then Taekwondo is an ideal choice.</p>
+    <p>At Ahn's Taekwondo in Lawrenceville, NJ, we offer martial arts programs designed to help children develop both physically and mentally in a safe, nurturing environment. <a href="#" onclick="openModal('modal-trial');return false">Enroll your child in our Taekwondo classes</a> and watch them gain <strong>confidence</strong>, <strong>discipline</strong>, and a passion for personal growth.</p>
 
-      <!-- Post 1: Enroll Your Child — FEATURED -->
-      <article class="article-card featured reveal">
-        <div class="article-photo" style="background:linear-gradient(135deg,#07101e,#1a3a6e)">
-          <img src="images/blog/enroll-your-child.jpeg" alt="Enroll Your Child in Fun &amp; Discipline-Focused Taekwondo Classes in Lawrenceville, NJ" loading="lazy" style="width:100%;height:100%;object-fit:cover">
-          <span class="article-tag">Kids Programs</span>
-        </div>
-        <div class="article-body">
-          <div class="article-meta">
-            <span class="article-date">September 18, 2024</span>
-          </div>
-          <h2 class="article-title">Enroll Your Child in Fun &amp; Discipline-Focused Taekwondo Classes in Lawrenceville, NJ</h2>
-          <p class="article-excerpt">As a parent, you want the best for your child. Taekwondo combines fun, fitness, discipline, and life skills — here's why Ahn's Taekwondo in Lawrenceville is the right choice, from building confidence and focus to choosing the class track that fits your child's belt level.</p>
-          <a href="blog-enroll-your-child.html" class="article-read-more">
-            Read More <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-        </div>
-      </article>
+    <h2>The Benefits of Taekwondo for Children</h2>
 
-    </div>
+    <h3>1. Physical Fitness and Health</h3>
+    <p>One of the most obvious benefits of Taekwondo is <strong>physical fitness</strong>. Today's world is increasingly sedentary, with many children spending more time indoors and on screens. Taekwondo provides an excellent way to get children moving. Through structured training sessions, children engage in activities that promote strength, flexibility, coordination, and balance.</p>
+    <p>Additionally, the cardiovascular workouts they get during each class ensure that they stay active and healthy.</p>
+    <p>Parents often see a noticeable improvement in their children's physical endurance and energy levels after just a few months of Taekwondo training.</p>
+    <p>And because martial arts don't feel like exercise in the traditional sense, kids are likelier to stick with it and enjoy the process.</p>
 
-    <!-- Newsletter opt-in -->
-    <div class="newsletter-strip reveal">
-      <h3>Stay in the Loop</h3>
-      <p>Get school news, event announcements, and exclusive offers delivered to your inbox.</p>
-      <form class="newsletter-form" onsubmit="submitNewsletter(event)">
-        <input type="email" name="email" placeholder="your@email.com" required autocomplete="email" aria-label="Email address">
-        <button type="submit">Subscribe</button>
-      </form>
-    </div>
+    <h3>2. Discipline and Focus</h3>
+    <p>One of the cornerstones of Taekwondo is <strong>discipline</strong>.</p>
+    <p>In our classes at Ahn's Taekwondo in Lawrenceville, children learn the importance of respecting authority, following directions, and maintaining focus. This extends beyond the Taekwondo classes into their daily lives, as parents often notice an improvement in their child's behavior at home and school.</p>
+    <p>Taekwondo teaches children to focus on goals, whether mastering a new technique or earning a new belt.</p>
+    <p>These lessons in discipline are invaluable, as they promote a mindset of perseverance and respect for both themselves and others. Through consistent practice, children learn that hard work and dedication pay off, giving them a strong foundation for success in life.</p>
+
+    <h3>3. Confidence and Self-Esteem</h3>
+    <p>At Ahn's Taekwondo in Lawrenceville, one of our key focuses is building <strong>confidence</strong> in children.</p>
+    <p>As they progress through the belt system and master new skills, children naturally develop a sense of achievement. This boost in self-esteem is essential for young kids, as it encourages them to believe in their abilities and strive for new challenges.</p>
+    <p>Children also learn <strong>self-defense</strong> techniques that equip them with the knowledge and skills to protect themselves. Knowing they can defend themselves in challenging situations can further bolster their confidence.</p>
+    <p>More importantly, the respectful and responsible approach taught in Taekwondo ensures that students understand that these techniques are not to be used unless absolutely necessary.</p>
+
+    <h3>4. Social Interaction and Teamwork</h3>
+    <p>Taekwondo may be an individual sport in terms of practice, but it provides children with ample opportunities for social interaction. In our Lawrenceville school, students work together in group classes, cheering each other on and learning the importance of <strong>teamwork</strong>.</p>
+    <p>The friendships children form through Taekwondo can be incredibly valuable, especially for those who may not participate in other team sports or social clubs.</p>
+    <p>The sense of camaraderie in our classes helps children develop their social skills in a supportive environment. They learn to respect their peers, work as a team, and celebrate each other's successes.</p>
+    <p>This is especially important for children who may be shy or struggle with confidence, as the martial arts community is one of mutual encouragement and respect.</p>
+
+    <h3>5. Developing Leadership and Responsibility</h3>
+    <p>Taekwondo offers children the opportunity to grow into responsible, confident young leaders. As they progress in their training, students take on greater responsibility, whether by helping newer classmates, setting a positive example, or taking pride in their personal progress.</p>
+    <p>These experiences naturally foster leadership qualities that carry over into their schoolwork, friendships, and home life.</p>
+    <p>At Ahn's Taekwondo in Lawrenceville, we encourage every student to develop a sense of ownership over their practice.</p>
+    <p>Whether it's learning a new technique or mastering a challenging form, our students gain a sense of responsibility for their actions and choices, setting them on a path to becoming thoughtful and capable leaders.</p>
+
+    <h2>Why Choose Ahn's Taekwondo in Lawrenceville, NJ?</h2>
+    <p>Choosing the right Taekwondo school for your child is important, and we believe that Ahn's Taekwondo in Lawrenceville offers a unique environment that focuses on growth, discipline, and fun. Our programs are structured to ensure each child gets the most out of their Taekwondo training, whether they're just starting or working toward higher belt levels.</p>
+    <p>Here's a closer look at the options we provide:</p>
+    <ul>
+      <li><a href="program-1.html">Little Tigers Program</a>: Our Little Tigers program is specifically designed for younger students, offering a gentle introduction to Taekwondo while building <strong>motor skills</strong>, focus, and coordination. This class is a perfect way for young children to engage in physical activity in a supportive, structured environment that prioritizes fun and personal growth.</li>
+      <li><a href="schedules.html">Low to Mid Belt Classes</a>: We offer structured classes for students with (White, Yellow Stripe, Yellow, Orange, Green, Blue, and Purple) belts. These classes focus on building <strong>foundational Taekwondo skills</strong>, from basic techniques to forms (patterns), while emphasizing <strong>discipline</strong> and respect.</li>
+      <li><a href="schedules.html">High and Black Belt Classes</a>: For our more advanced students with (Brown, Red, Junior Black, and Black) belts, our High and Black Belt classes take training to the next level. These students work on complex forms, <strong>advanced techniques</strong>, and <strong>leadership skills</strong>, preparing them for future opportunities within the martial arts community.</li>
+      <li><a href="schedules.html">Black Belt-Only Classes</a>: Black Belt classes are open exclusively to those who have achieved the rank of Black Belt, focusing on mastery of forms, sparring, and leadership within the school. These classes are challenging, pushing students to reach their full potential while setting a positive example for younger students.</li>
+      <li><a href="program-3.html">Teens and Adults Program</a>: For older students and adults, our Teen and Adult program is open to all skill levels. Whether you're a beginner or experienced in martial arts, these classes provide a combination of <strong>fitness, self-defense, and traditional Taekwondo techniques</strong>. The supportive and motivating environment encourages teens and adults to build physical strength and mental focus.</li>
+      <li><strong>Special Programs</strong>: Demo Team and Pre-Instructors — these exclusive programs are by special invitation only. Students are selected by our Masters for their exemplary skills and dedication. The Demo Team participates in exhibitions and performances, while the Pre-Instructors program helps students develop teaching and leadership skills.</li>
+      <li><strong>Black Belt Club and Leadership Program (BBC/LC Option Classes)</strong>: For students looking to go beyond regular training, we offer additional classes that focus on <strong>self-defense, weapons training, and full-contact sparring</strong>. These classes are open to members of the Black Belt Club and Leadership Program, providing a unique opportunity to enhance their skills with more specialized training.</li>
+    </ul>
+
+    <h2>Important Rules &amp; Regulations</h2>
+    <p>At Ahn's Taekwondo, we believe that <strong>respect</strong> and <strong>discipline</strong> are key elements of martial arts training.</p>
+    <p>We ask that all students follow these guidelines to maintain a positive and focused learning environment:</p>
+    <ul>
+      <li><strong>Uniform</strong>: Please wear your full uniform, including both top and bottom, along with your belt.</li>
+      <li><strong>Punctuality</strong>: Be on time for your classes to show respect to your instructors and fellow students.</li>
+      <li><strong>Respect</strong>: Always demonstrate respect by using the correct bowing techniques and polite responses in class.</li>
+    </ul>
+
+    <h2>Join Us at Ahn's Taekwondo</h2>
+    <p>At Ahn's Taekwondo in Lawrenceville, we pride ourselves on providing a structured, fun, and engaging environment for students of all ages and skill levels. Whether you're enrolling your child in our <a href="program-1.html">Little Tigers program</a> or looking for advanced training as a Black Belt, we have a class that fits your needs.</p>
+    <p><a href="#" onclick="openModal('modal-trial');return false">Ready to get started? Enroll today</a> and discover the many benefits of Taekwondo!</p>
   </div>
-</section>
+</div>
 
-<section class="news-cta">
-  <h2>See It For Yourself</h2>
-  <p>Words on a page only go so far. Come in, meet the team, and try a free class.</p>
+<section class="post-cta">
+  <h2>Ready to Get on the Mats?</h2>
+  <p>Your first class is completely free — no experience required.</p>
   <div class="cta-pair">
     <button class="btn btn-primary" onclick="openModal('modal-trial')">Book Free Trial</button>
     <button class="btn btn-ghost" onclick="openModal('modal-kit')">Get Pricing Guide</button>
@@ -272,9 +281,9 @@
 
         <li><a href="program-4.html">Family Taekwondo</a></li>
 
-        
 
-        
+
+
       </ul>
     </div>
     <div class="footer-col">
@@ -296,7 +305,7 @@
         <div class="footer-contact-row"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>160 Lawrenceville-Pennington Rd<br>Lawrenceville, NJ 08648</div>
         <div class="footer-contact-row"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg><a href="tel:(908) 331-1445">(908) 331-1445</a></div>
         <div class="footer-contact-row"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg><a href="mailto:ahnsrdtkd@gmail.com">ahnsrdtkd@gmail.com</a></div>
-        
+
       </address>
     </div>
   </div>
@@ -363,10 +372,6 @@
   });
   var hdr=document.getElementById('header');
   window.addEventListener('scroll',function(){hdr.style.boxShadow=window.scrollY>10?'0 2px 28px rgba(0,0,0,.14)':'0 2px 20px rgba(0,0,0,.07)';},{passive:true});
-  if('IntersectionObserver' in window){
-    var obs=new IntersectionObserver(function(e){e.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:0.1,rootMargin:'0px 0px -36px 0px'});
-    document.querySelectorAll('.reveal').forEach(function(el){obs.observe(el)});
-  } else { document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('visible')}); }
   window.openModal=function(id){var el=document.getElementById(id);if(!el)return;el.classList.add('open');document.body.style.overflow='hidden';var f=el.querySelector('input,select');if(f)setTimeout(function(){f.focus()},80)};
   window.closeModal=function(id){var el=document.getElementById(id);if(!el)return;el.classList.remove('open');document.body.style.overflow=''};
   window.closeOnOverlay=function(e,id){if(e.target===e.currentTarget)closeModal(id)};
@@ -376,9 +381,6 @@
     var btn=form.querySelector('[type=submit]');btn.textContent='Sending…';btn.disabled=true;
     if(url&&url.charAt(0)!=='[')fetch(url,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)}).catch(function(){});
     setTimeout(function(){if(mid==='modal-trial'){window.location.href='https://PLACEHOLDER-replace-before-build';}else{var b=document.getElementById(mid+'-body'),s=document.getElementById(mid+'-success');if(b)b.style.display='none';if(s)s.style.display='block';}},550);
-  };
-  window.submitNewsletter=function(e){
-    e.preventDefault();var btn=e.target.querySelector('button');btn.textContent='Subscribed!';btn.disabled=true;
   };
 }());
 </script>
